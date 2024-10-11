@@ -1,0 +1,135 @@
+body {
+  background-color: #c0c0c0; 
+  font-family: "Verdana", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#desktop {
+  position: relative;
+  height: 100vh;
+}
+
+.start-wrapper {
+  position: relative; 
+  display: inline-block;
+}
+
+.start-button {
+  background-color: #008080;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu-list {
+  display: none;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;  
+  background-color: #808080;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  z-index: 1000;
+  width: 150px;
+  border: 1px solid #000;
+}
+
+.menu-item {
+  background-color: #808080;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  text-align: left;
+  display: block;
+  text-decoration: none;
+}
+
+
+.start-wrapper:hover .menu-list,
+.menu-list:hover {
+  display: block;
+}
+
+
+.window {
+  background-color: white;
+  width: 400px;
+  border: 2px solid black;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.title-bar {
+  background-color: #000080;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-bar .title {
+  font-weight: bold;
+}
+
+.window-controls button {
+  background-color: #808080;
+  border: none;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.window-content {
+  padding: 10px;
+  font-family: "Verdana", sans-serif;
+}
+
+
+.hidden-checkbox {
+  display: none;
+}
+
+
+.text-container {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 300px;
+  height: auto;
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+  font-family: "Verdana", sans-serif;
+}
+
+
+#facts-checkbox:checked ~ #facts-text {
+  display: block;
+}
+
+#experience-checkbox:checked ~ #experience-text {
+  display: block;
+}
+
+
+.hidden-image {
+  display: none; 
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  max-width: 500px; 
+  max-height: 500px; 
+}
+
+
+#facts-checkbox:checked ~ #info-image,
+#experience-checkbox:checked ~ #info-image {
+  display: block; 
+}

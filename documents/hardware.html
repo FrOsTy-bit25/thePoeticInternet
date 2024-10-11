@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Retro Windows 98 Website</title>
+        <link rel="stylesheet" href="/styles/hardware.css">
+    </head>
+    <body>
+
+        <div id="desktop">
+            <div id="start-menu">
+                <div class="start-wrapper">
+                    <button class="start-button">Start</button>
+                    <ul class="menu-list">
+                        <li>
+                            <label for="facts-checkbox" class="menu-item">Facts</label>
+                        </li>
+                        <li>
+                            <label for="experience-checkbox" class="menu-item">First Experience</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="window">
+                <div class="title-bar">
+                    <span class="title">My Website</span>
+                    <div class="window-controls">
+                        <button class="minimize">_</button>
+                        <button class="maximize">[ ]</button>
+                        <button class="close">X</button>
+                    </div>
+                </div>
+                <div class="window-content">
+                    <h1>Welcome to My Retro Site!</h1>
+                    <p>This website is inspired by the Windows 98 era.</p>
+                </div>
+            </div>
+
+            <input type="checkbox" id="facts-checkbox" class="hidden-checkbox">
+            <input type="checkbox" id="experience-checkbox" class="hidden-checkbox">
+
+            <div class="text-container" id="facts-text">
+                <p>"When Dell created the Dimension V333c, it was a great value at an important
+                    time in PC history. The race between Intel, AMD, and Cyrix was neck and neck,
+                    and Intel was trying to upend the market with its Pentium line of processors.
+                    The V333c was released a few months after Microsoft’s Windows 98, and Dell’s
+                    reasonable price and well-rounded configuration attracted attention".
+                    https://retroviator.com/tag/windows-98/
+                </p>
+            </div>
+
+            <div class="text-container" id="experience-text">
+                <p>Vores første computer var en Dell Dimension V333c. Den stod i vores kælder og
+                    skulle deles af hele familien, som bestod af mine forældre og mine tre brødre.
+                    Min første oplevelse med computeren var en aften, hvor min storebror passede
+                    mig, mens mine forældre var ude. For at underholde mig satte han mig foran
+                    computeren, startede RollerCoaster Tycoon og lærte mig de grundlæggende ting i
+                    spillet. Jeg var altid utålmodig, fordi det tog alt for lang tid at tænde
+                    computeren. Skærmen var lige så stor som selve computeren og føltes næsten
+                    tungere end PC’en. Hver gang et nyt spil blev udgivet, skulle man bruge mindst
+                    2-4 forskellige CD’er for at installere det på computeren..</p>
+            </div>
+
+            <img
+                id="info-image"
+                src="/resources/retroPc.webp"
+                alt="Information Image"
+                class="hidden-image">
+
+        </div>
+
+    </body>
+</html>
